@@ -1,0 +1,149 @@
+body{
+    background: rgb(226, 226, 226);
+    color: white;
+    font-size: 17px;
+    font-family: Impact, Charcoal, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+
+header{
+    background: black;
+    background-image: url("kuvat/1110158_1.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: relative;
+    padding: 7em;
+    padding-bottom: 14em;
+    text-align: center;
+}
+
+header h1{
+    border-style: outset;
+    border-radius: auto;
+    display: inline-block;
+    padding: 10px;
+    font-size: 50px;
+    text-transform: uppercase;
+    padding-right: -20em;
+    }
+
+header .mobile{
+    display: none;
+
+}
+
+header .logo a{
+    text-decoration: none;
+    background-size: 100px;
+    background-image: url("kuvat/valtsu.gif");
+    display: inline-block;
+    text-indent: -100000em;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 120px;
+    width: 80px;
+    top: -60px;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* RESPONSIVE RULES */
+@media screen and (max-width: 1200px) {
+    header {
+        background-size: 200%;
+        padding: 10em;
+    }
+    header .logo a{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 772px) {
+    header {
+        height: 200px;
+        background-size: 300%;
+    }
+    header .mobile {
+        display: inline-block;
+    }
+    header .desktop {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    nav ul li{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 2em;
+    }
+}
+
+/* FEATURES */
+
+.features {
+    background: rgb(81, 81, 81);
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.features figure {
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    width: 200px;
+}
+
+.features figure img {
+    border-radius: 50%;
+    width: 200px;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.features figure img:hover {
+    border-radius: 10%;
+    opacity: 1;
+}
+
+a {
+    text-decoration: none;
+    padding: 10px;
+}
+
+a:hover{
+    background: grey;
+    border-radius: 15px 50px;
+    opacity: 0.5;
+}
+
+a:visited{
+    color: white;
+}
+
+
+footer{
+    background: grey;
+    font-size: 12px;
+    font-family: sans-serif;
+    padding: 1em;
+    text-align: center;
+}
+
+
+
